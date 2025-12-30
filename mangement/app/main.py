@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers.routes import router
+from app.routers.products import router
 import logging
 
 logging.basicConfig(level=logging.INFO)
