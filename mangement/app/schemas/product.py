@@ -19,3 +19,11 @@ class ProductStatus(str, enum.Enum):
     PROCESSING = "processing"
     COMPLETED = "completed"
     FAILED = "failed"
+
+class ProductDetail(BaseModel):
+    product_id: int
+    name: str
+    price: float
+    image_url: str
+    created_at: str
+    from_cache: bool = False
